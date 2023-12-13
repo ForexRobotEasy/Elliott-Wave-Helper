@@ -1,0 +1,45 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                       Elliott Wave Helper |
+//|                                                      forexroboteasy.com |
+//|                                                 Development: Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+#property strict
+
+//+------------------------------------------------------------------+
+//| Custom Indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Set indicator properties and settings here
+
+   return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom Indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+   // Perform wave analysis calculations here
+
+   return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Custom Indicator deinitialization function                       |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+   // Perform any necessary cleanup tasks here
+}
